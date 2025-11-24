@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Albert M  Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/favic.svg" type="image/png">
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">Bert</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    
+<section id="inicio" class="card-glass">
+    <h2>Hola, soy <span class="accent">Albert</span></h2>
+    <p>Bienvenido a mi portfolio. </p>
+
+    <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carouselTrack">
+            <img src="./assets/cubo.png" alt="img1" />
+            <img class= "poker" src="./assets/poker.png" alt="img2" />
+            <img class="onmidev"src="./assets/onmidev.png" alt="img3" />
+            <img src="./assets/cubo.png" alt="img2" />
+            <img class= "poker" src="./assets/poker.png" alt="img2" />
+            <img src="./assets/cubo.png" alt="img1" />
+            <img class="poker" src="./assets/poker.png" alt="img2" />
+            <img class="onmidev" src="./assets/onmidev.png" alt="img3" />
+            <img src="./assets/cubo.png" alt="img2" />
+            <img class="poker" src="./assets/poker.png" alt="img2" />
+        </div>
+        
+
+    <a href="#proyectos" class="btn-main">Ver mis proyectos</a>
+</section>
+
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre" class="card-glass">
+        <h2>Sobre mí</h2>
+        <div class="sobre-grid">
+            <div class="sobre-text">
+                <p>Soy Albert, diseñador con alguna experiencia que busca unir estética y funcionalidad mediante interfaces limpias,
+                    modernas y centradas en el usuario. Me apasiona convertir ideas en experiencias visuales coherentes,
+                    intuitivas y con atención al detalle.</p>
+                <p>Mi estilo pretende combinar minimalismo moderno con efectos suaves, para dar una
+                    sensación premium sin perder claridad visual.</p>
+                <ul class="skills-list">
+                    <li>🎨 UI/UX Design</li>
+                    <li>🧩 Prototipado en Figma</li>
+                    <li>💻 Frontend (HTML, CSS)</li>
+                    <li>✨ Diseño de producto</li>
+                </ul>
+            </div>
+            <div class="sobre-img">
+                <img src="./assets/perfil.jpeg" alt="Foto de Albert" />
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="card-glass">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+            <article class="project-card">
+                <img src="./assets/cubo.png" alt="Proyecto 1" />
+                <h3>Cubo 3D CSS</h3>
+                <p>Diseño de cubo 3D con CSS.</p>
+                <a href="./proyecto1.html" class="btn-main" target="_blank">Ver más</a>
+            </article>
+
+            <article class="project-card">
+                <img src="./assets/onmidev.png" alt="Proyecto 2" />
+                <h3>Landing page</h3>
+                <p>Landing Page para Onmidev Gambling Dev. prototipado en Figma</p>
+                <a href="https://onmidev.com/es" class="btn-main" target="_blank">Ver más</a>
+            </article>
+
+            <article class="project-card">
+                <img src="./assets/poker.png" alt="Proyecto 3" />
+                <h3>Banners</h3>
+                <p>Diseño de banners para casino online en Figma.</p>
+                <a href="https://www.figma.com/design/KDr3FLRoPa967kOgDaYHbA/Banner-Zeus?node-id=0-1&t=SxDss8xhj90vaYVz-1" class="btn-main" target="_blank">Ver más</a>
+            </article>
+
+            <!-- <article class="project-card">
+                <img src="./assets/proyecto4.png" alt="Proyecto 4" />
+                <h3>Proyecto 4</h3>
+                <p>Portfolio minimalista para desarrollador.</p>
+                <a href="#" class="btn-main">Ver más</a>
+            </article> -->
+        </div>
+    </section>
+
+<section id="contacto" class="contact-links">
+    <h2>Contacto</h2>
+    <p>Puedes encontrarme en mis redes o enviarme un mensaje:</p>
+    <div class="redes">
+        <!-- <a href="#">LinkedIn</a> -->
+        <a href="https://github.com/dashboard" target="_blank">GitHub</a>
+        <a href="#contact-modal" class="open-modal">Email</a>
+    </div>
+</section>
+</main>
+<footer>
+    <p>2025 Bert | Diseñado para GS DAW con HTML & CSS</p>
+</footer>
+
+<div id="contact-modal" class="modal-overlay">
+    <div class="modal-box">
+
+        <a href="#" class="modal-close">×</a>
+
+        <h2>Envíame un mensaje</h2>
+
+        <form action="https://formspree.io/f/xrbrvzrq" method="POST" class="modal-form">
+
+            <label>Nombre:
+                <input type="text" name="nombre" required>
+            </label>
+
+            <label>Correo electrónico:
+                <input type="email" name="email" required>
+            </label>
+
+            <label>Mensaje:
+                <textarea name="mensaje" rows="4" required></textarea>
+            </label>
+
+            <button type="submit" class="btn-main">Enviar</button>
+
+        </form>
+
+    </div>
+</div>
+
+
+</body>
+</html>
